@@ -1,0 +1,184 @@
+@import url('reset.css');
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body
+{
+  font-family: 'Gudea', sans-serif;
+  font-size: 1em;
+  color: #444;
+  text-align: center;
+}
+
+header
+{
+  background-color: IndianRed;
+  background-image: url('http://i.imgur.com/8sFhWDU.jpg');
+  background-position: 0% 20%;
+  border-bottom: 5px solid IndianRed;
+}
+
+.header-inner
+{
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.color-overlay
+{
+  background-color: rgba(205, 92, 92, .5);
+  z-index: 1;
+  height: 100%;
+}
+
+h1
+{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4.5em;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+h2
+{
+  font-size: 1.3em;
+}
+
+h3
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  margin: 40px 0;
+}
+
+.question
+{
+  position: relative;
+  border-bottom: 2px dashed IndianRed;
+  min-height: 250px;
+  padding: 30px;
+}
+
+.q5
+{
+  border-bottom: 0px;
+}
+
+.question-number
+{
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  left: -30px;
+  top: 50px;
+  font-size: 10em;
+  border-radius: 100%;
+  color: IndianRed;
+  border: 2px solid IndianRed;
+  width: 150px;
+  height: 150px;
+  line-height: .6;
+}
+
+.q3 .question-number, .q4 .question-number, .q5 .question-number
+{
+  line-height: .5;
+}
+
+.options li
+{
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 1.3em;
+  position: relative;
+}
+
+li:before
+{
+  content: " ";
+  width: 30px;
+  height: 30px;
+  border: 2px solid IndianRed;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+
+.checked
+{
+  content: "X";
+  width: 30px;
+  height: 30px;
+  border: 2px solid IndianRed;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  line-height: 1.2;
+}
+
+.result-incorrect, .result-correct
+{
+  color: white;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  top: 85px;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.result-incorrect
+{
+  background-color: LightPink;
+}
+
+.result-correct
+{
+  background-color: LightGreen;
+}
+
+footer
+{
+  background-color: LightCoral;
+  background-image: url('http://i.imgur.com/8sFhWDU.jpg');
+  background-position: 0% 50%;
+  text-align: center;
+  padding: 85px;
+  position: relative;
+  border-top: 5px solid IndianRed;
+}
+
+.score-button
+{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-color: IndianRed;
+  padding: 30px;
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  font-size: 1.8em;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.score-button:hover
+{
+  cursor: pointer;
+  background-color: LightCoral;
+}
+
+
+
